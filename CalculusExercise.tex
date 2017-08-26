@@ -1,0 +1,145 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[a5paper, 11pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper}
+\geometry{left=1.27cm,right=1.27cm,top=1.27cm,bottom=1.27cm}
+\usepackage{fontspec}
+\usepackage{xltxtra}
+\usepackage{xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont{宋体-简} %设置中文字体
+\XeTeXlinebreaklocale “zh”
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt %文章内中文自动换行
+\linespread{1.6}
+\newfontfamily{\K}{楷体-简}
+\newfontfamily{\H}{Helvetica} %设定新的字体快捷命令
+
+\title{Calculus Exercise}
+\author{Drapor}
+
+\begin{document}
+\section*{【核心作业四】泰勒级数的计算}
+\subsection*{1 \K 用泰勒级数为$e^{2x^2}$在0附近找到一个良好的二次近似，即将其展开为二次泰勒级数。}
+A. $e^{2x^2} \approx 1 - x - 2x^2$\\
+B. $e^{2x^2} \approx 2x^2$\\
+C. $e^{2x^2} \approx 1 + x + 2x^2$\\
+D. $e^{2x^2} \approx 1 - 2x^2$\\
+E. $e^{2x^2} \approx 1 + 2x^2$\\
+F.  $e^{2x^2} \approx x + 2x^2$\\
+
+\subsection*{2 \K 将$e^{u^2+u}$展开为四次泰勒级数。}
+A. $e^{u^2+u} \approx 1 + u + \frac{3}{2}u^2 + \frac{7}{6}u^3 + \frac{25}{24}u^4 +$ H.O.T. \\
+B. $e^{u^2+u} \approx 1 - u - \frac{1}{2}u^2 + \frac{2}{3}u^3 + \frac{5}{4}u^4 +$ H.O.T. \\
+C. $e^{u^2+u} \approx 1 - u - \frac{1}{2}u^2 + \frac{5}{6}u^3 + \frac{25}{24}u^4 +$ H.O.T. \\
+D. $e^{u^2+u} \approx 1 + u + \frac{3}{2}u^2 + \frac{4}{3}u^3 + \frac{5}{4}u^4 +$ H.O.T. \\
+E. $e^{u^2+u} \approx 1 + u + \frac{3}{2}u^2 + \frac{7}{6}u^3 + \frac{5}{4}u^4 +$ H.O.T. \\
+F. $e^{u^2+u} \approx 1 - u - \frac{1}{2}u^2 + \frac{2}{3}u^3 + \frac{25}{24}u^4 +$ H.O.T. \\
+
+\subsection*{3 \K 将$e^{1 - \cos x}$展开为四次泰勒级数。}
+A. $e^{1 - \cos x} = 1 + \frac{x^2}{2} + \frac{x^4}{8} +$  H.O.T. \\
+B. $e^{1 - \cos x} = 1 + \frac{x^2}{2} - \frac{x^4}{24} +$ H.O.T. \\
+C. $e^{1 - \cos x} = 1 + \frac{x^2}{2} + \frac{x^4}{12} +$ H.O.T. \\
+D. $e^{1 - \cos x} = 1 - \frac{x^2}{2} + \frac{x^4}{12} +$ H.O.T. \\
+E. $e^{1 - \cos x} = 1 - \frac{x^2}{2} + \frac{x^4}{8} +$ H.O.T. \\
+F. $e^{1 - \cos x} = 1 - \frac{x^2}{2} - \frac{x^4}{24} +$ H.O.T. \\
+\subsection*{4 \K 计算$\cos(\sin x)$展开为泰勒级数的前三个非零项。}
+A. $\cos(\sin x) = 1 - \frac{x^2}{2} + \frac{x^4}{4} +$ H.O.T. \\
+B. $\cos(\sin x) = 1 - \frac{x^2}{2} + \frac{x^4}{6} +$ H.O.T. \\
+C. $\cos(\sin x) = 1 - \frac{x^2}{2} + \frac{5x^4}{24} +$ H.O.T. \\
+D. $\cos(\sin x) = 1 - \frac{x^2}{2} + \frac{5x^4}{6} +$ H.O.T. \\
+E. $\cos(\sin x) = 1 - \frac{x^2}{2} + \frac{5x^4}{4} +$ H.O.T. \\
+F. $\cos(\sin x) = 1 - \frac{x^2}{2} + \frac{x^4}{24} +$ H.O.T. \\
+
+\subsection*{5 \K 计算$\frac{\cos(2x)-1}{x^2}$展开为泰勒级数的前三个非零项。}
+A. $\frac{\cos(2x) - 1}{x^2} = -2 + \frac{2x^2}{3} +\frac{x^4}{45} +$ H.O.T. \\
+B. $\frac{\cos(2x) - 1}{x^2} = -2 + \frac{2x^2}{3} - \frac{4x^4}{45} +$ H.O.T. \\
+C. $\frac{\cos(2x) - 1}{x^2} = -\frac{1}{2} + \frac{x^2}{24} - \frac{x^4}{720} +$ H.O.T. \\
+D. 这个函数在原点附近无法展开为泰勒级数 \\
+E. $\frac{\cos(2x) - 1}{x^2} = 2 - \frac{x^2}{6} + \frac{x^4}{45} +$ H.O.T. \\
+F. $\frac{\cos(2x) - 1}{x^2} = -2 + \frac{x^2}{6} - \frac{2x^4}{45} +$ H.O.T. \\
+
+\subsection*{6 \K 将函数$\cos x \sin 2x$展开为五次泰勒级数。}
+\emph{提示}：别算导数！\\
+A. $\cos x \sin 2x = 2x - \frac{7x^3}{3} + \frac{3x^5}{4} +$ H.O.T. \\
+B. $\cos x \sin 2x = 2x - \frac{7x^3}{3} + \frac{7x^5}{20} +$ H.O.T. \\
+C. $\cos x \sin 2x = 2x - \frac{4x^3}{3} + \frac{3x^5}{4} +$ H.O.T. \\
+D. $\cos x \sin 2x = 2x - \frac{4x^3}{3} + \frac{61x^5}{60} +$ H.O.T. \\
+E. $\cos x \sin 2x = 2x - \frac{4x^3}{3} + \frac{7x^5}{20} +$ H.O.T. \\
+F. $\cos x \sin 2x = 2x - \frac{7x^3}{3} + \frac{61x^5}{60} +$ H.O.T. \\
+
+\subsection*{7 \K 将函数$x^{-1}e^x sin x$展开为四次泰勒级数。}
+A. $x^{-1} e^x \sin x = 1 + x + \frac{7x^2}{6} + \frac{x^3}{3} + \frac{2x^4}{15} +$ H.O.T. \\
+B. $x^{-1} e^x \sin x = 1 + x + \frac{x^2}{3} - \frac{3x^4}{40} +$ H.O.T. \\
+C. $x^{-1} e^x \sin x = 1 + x + \frac{7x^2}{6} + \frac{5x^3}{24} - \frac{x^4}{60} +$ H.O.T. \\
+D. $x^{-1} e^x \sin x = 1 + x + \frac{x^2}{3} - \frac{x^4}{24} +$ H.O.T. \\
+E. $x^{-1} e^x \sin x = 1 + x + \frac{x^2}{3} - \frac{x^4}{30} +$ H.O.T. \\
+F. $x^{-1} e^x \sin x = 1 + x + \frac{7x^2}{6} + \frac{x^3}{24} + \frac{3x^4}{40} +$ H.O.T. \\
+
+\subsection*{8 \K 计算$\frac{e^{2x} \sinh x}{2x}$展开为泰勒级数的前三个非零项。}
+A. $\frac{e^{2x} \sinh x}{2x} = \frac{1}{2} + \frac{x}{2} +  \frac{11x^2}{12} +$ H.O.T. \\
+B. $\frac{e^{2x} \sinh x}{2x} = \frac{1}{2} + \frac{x}{2} +  \frac{x^2}{12} +$ H.O.T. \\
+C. $\frac{e^{2x} \sinh x}{2x} = \frac{1}{2} + \frac{x}{2} +  \frac{13x^2}{12} +$ H.O.T. \\
+D. $\frac{e^{2x} \sinh x}{2x} = \frac{1}{2} + x +  \frac{11x^2}{12} +$ H.O.T. \\
+E. $\frac{e^{2x} \sinh x}{2x} = \frac{1}{2} + x +  \frac{x^2}{12} +$ H.O.T. \\
+F. $\frac{e^{2x} \sinh x}{2x} = \frac{1}{2} + x +  \frac{13x^2}{12} +$ H.O.T. \\
+
+\clearpage
+\section*{【核心作业四】答案与解析}
+\subsection*{1. E}
+令$f(x) = e^{2x^2}$，则有$f(0) = 1$，$f'(x) = 4x e^{2x^2}$，$f'(0)=0$，$f''(x) = 4 e^{2x^2} + 16x^2 e^{2x^2}$，$f''(0) = 4$\\
+所以$f(x)\approx f(0) + \frac{f'(0)}{1!} x+ \frac{f''(0)}{2!} x^2= 1 + 2x^2$
+
+
+\subsection*{2. A}
+令$f(x) = e^{u^2+u}$，\\
+$f'(x) = (2u+1)e^{u^2+u}$，\\
+$f''(x) = 2e^{u^2+u} + (2u+1)^2e^{u^2+u}$，\\
+$f'''(x) = 6(2u+1)e^{u^2+u} + (2u+1)^3e^{u^2+u}$，\\
+$f^{(4)} = 12e^{u^2+u} + 12(2u+1)^2e^{u^2+u} + (2u+1)^4e^{u^2+u}$\\
+所以$f(x) = f(0) + \frac{f'(0)}{1!} x+ \frac{f''(0)}{2!} x^2+ \frac{f'''(0)}{3!} x^3 + \frac{f^{(4)}(0)}{4!} x^4 $+ H.O.T.\\
+\hspace*{43pt} $= 1 + x + \frac{3}{2}x^2 + \frac{7}{6}x^3 + \frac{25}{24}x^4$
+
+\subsection*{3. A}
+令$f(x) = e^{u^2+u}$，\\
+$f'(x) = (2u+1)e^{u^2+u}$，\\
+$f''(x) = 2e^{u^2+u} + (2u+1)^2e^{u^2+u}$，\\
+$f'''(x) = 6(2u+1)e^{u^2+u} + (2u+1)^3e^{u^2+u}$，\\
+$f^{(4)} = 12e^{u^2+u} + 12(2u+1)^2e^{u^2+u} + (2u+1)^4e^{u^2+u}$\\
+所以$f(x) = f(0) + \frac{f'(0)}{1!} x+ \frac{f''(0)}{2!} x^2+ \frac{f'''(0)}{3!} x^3 + \frac{f^{(4)}(0)}{4!} x^4 $+ H.O.T.\\
+\hspace*{43pt} $= 1 + x + \frac{3}{2}x^2 + \frac{7}{6}x^3 + \frac{25}{24}x^4$
+
+\subsection*{4. C}
+令$f(x) = \cos(\sin x)$，\\
+$f'(x) = -\sin(\sin x) \cos x$，\\
+$f''(x) = -\cos (\sin x)\cos^2 x + \sin(\sin x)\sin x$，\\
+$f'''(x) = \sin(\sin x)(\cos^3 x + \cos x) + (3 \sin x \cos x) \cos(\sin x)$，\\
+$f^{(4)} = \cos(\sin x)(\cos^4x + 7\cos^2x - 3) + \sin(\sin x)(-3\cos^2x\sin x - \sin x)$\\
+所以$f(x) = f(0) + \frac{f'(0)}{1!} x+ \frac{f''(0)}{2!} x^2+ \frac{f'''(0)}{3!} x^3 + \frac{f^{(4)}(0)}{4!} x^4 $+ H.O.T.\\
+\hspace*{43pt} $= 1 - \frac{x^2}{2} + \frac{5}{24}x^4$
+
+\subsection*{5. B}
+因为 $\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!}  +$ H.O.T.\\
+于是 $\cos 2x = 1 - \frac{(2x)^2}{2!} + \frac{(2x)^4}{4!} - \frac{(2x)^6}{6!}  +$ H.O.T.\\
+\hspace*{22pt} $\cos 2x - 1 = - \frac{(2x)^2}{2!} + \frac{(2x)^4}{4!} - \frac{(2x)^6}{6!}  +$ H.O.T.\\
+\hspace*{22pt} $\frac{\cos 2x - 1}{x^2} = - \frac{2^2}{2!} + \frac{2^4}{4!}x^2 - \frac{2^6}{6!}x^4  +$ H.O.T.\\
+\hspace*{22pt} $\frac{\cos 2x - 1}{x^2} \approx -2 + \frac{2}{3} x^2 - \frac{4}{45} x^4$
+
+\subsection*{6. F}
+因为 $\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!}  +$ H.O.T.，$\sin (2x) = (2x) - \frac{(2x)^3}{3!} + \frac{(2x)^5}{5!} +$ H.O.T.\\
+则$\cos x \sin 2x = (1 - \frac{x^2}{2!} + \frac{x^4}{4!} )((2x) - \frac{(2x)^3}{3!} + \frac{(2x)^5}{5!}) $+ H.O.T.\\
+\hspace*{64pt}$= 2x - \frac{7x^3}{3} + \frac{61x^5}{60} +$ H.O.T. 
+
+\subsection*{7. E}
+由$\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} +$ H.O.T.\\
+$e^x = 1 + \frac{x}{1!} + \frac{x^2}{2!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!}  +$ H.O.T.\\
+得$\frac{\sin x}{x} = 1 - \frac{x^2}{3!} + \frac{x^4}{5!}$ H.O.T.\\
+所以$x^{-1} e^x \sin x = 1 + x + \frac{x^2}{3} - \frac{x^4}{30} +$ H.O.T. 
+
+\subsection*{8. F}
+由$\sinh x = \frac{e^x - e^{-x}}{2}$，得$\frac{e^{2x}\sinh x}{2x} = \frac{e^{3x} - e^x}{4x}$，\\
+又$e^x = 1 + \frac{x}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} +$ H.O.T.，$e^{3x} = 1 + \frac{3x}{1!} + \frac{(3x)^2}{2!} +\frac{(3x)^3}{3!} +$ H.O.T.\\
+则$e^{3x} - e^x = 2x + 4x^2 + \frac{13}{3}x^3$\\
+所以$\frac{e^{2x} \sinh x}{2x} = \frac{1}{2} + x +  \frac{13x^2}{12} +$ H.O.T. \\
+\end{document}
